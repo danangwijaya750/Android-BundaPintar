@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.kebutuhan_gizi.DetailKebutuhanGiziActivity">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginLeft="15dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/tv_header"
+            android:text="KALKULATOR STATUS GIZI"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl_form"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berapakah Kebutuhan Kalori Anda?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:entries="@array/kategori"
+                    android:id="@+id/sp_kategori"
+                    android:hint="Jenis Kelamin"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/et_nama"
+                    android:hint="Nama"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:entries="@array/gender"
+                    android:id="@+id/sp_jenis_kelamin"
+                    android:hint="Jenis Kelamin"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:id="@+id/tf_usia"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/et_usia"
+                    android:hint="Tanggal Lahir"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/et_bb"
+                    android:hint="Berat Badan (Kg)"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/et_tb"
+                    android:inputType="numberDecimal"
+                    android:hint="Tinggi Badan (cm)"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn"
+                android:text="HITUNG"
+                android:id="@+id/btn_hitung"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

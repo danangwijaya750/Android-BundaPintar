@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.edukasi.EdukasiGiziSeimbangActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="15dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="EDUKASI GIZI SEIMBANG"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gizi_seimbang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_gizi_seimbang"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="GIZI SEIMBANG"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_gizi_seimbang"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/gizi_seimbang"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_penyebab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_gizi_seimbang">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_penyebab"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="PENYEBAB KURANG GIZI"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_penyebab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/penyebab"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_penyebab">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_tanda"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="TANDA DAN GEJALA GIZI KURANG"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tanda"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/tanda_gizi"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_akibat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_tanda">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_akibat"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="AKIBAT GIZI KURANG"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_akibat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/akibat_gizi"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.fungsi_makanan.FungsiMakananActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="15dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="FUNGSI MAKANAN"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tenaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_tenaga"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="ZAT TENAGA"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_zat_tenaga"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/zat_tenaga"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_pembangun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_tenaga">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_pembangun"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="ZAT PEMBANGUN"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_zat_pembangun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/zat_pembangun"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pengatur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_pembangun">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_pengatur"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_sub"
+                android:gravity="center_vertical"
+                android:text="ZAT PENGATUR"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_zat_pengatur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_tv"
+                android:padding="10dp"
+                android:text="@string/zat_pengatur"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

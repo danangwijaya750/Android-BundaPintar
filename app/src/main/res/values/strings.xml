@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Bunda Pintar</string>
+    <string name="tanda_gizi">1.\t Berat badan kurang dari normal/kurus\n2.\t Nafsu makan berkurang\n3.\t Kurang bersemangat\n4.\t Mata pucat\n5.\t Mudah lelah\n6.\t Malas beraktifitas\n7.\t Cengeng</string>
+    <string name="gizi_seimbang">
+        Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat gizi dalam jenis dan
+        jumlah yang sesuai dengan kebutuhan tubuh yaitu jenis kelamin, umurdan status kesehatan
+    </string>
+    <string name="penyebab">1.\t Jumlah makanan yang dimakan kurang\n2.\t Jenis bahan makanan tidak seimbang\n3.\t Makan tidak teratur\n4.\t Penyakit infeksi\n5.\t Anak banyak jajan di luar
+    </string>
+    <string name="akibat_gizi">1.\t Kecerdasan kurang\n2.\t Kurang darah\n3.\t Gangguan pertumbuhan dan perkembangan\n4.\t Mudah terserang penyakit.
+    </string>
+    <string name="zat_tenaga">
+        Zat gizi yang menghasilkan tenaga atau energi adalah karbohidrat , lemak, dan protein
+    </string>
+    <string name="zat_pembangun">
+        Protein sebagai zat pembangun bukan hanya untuk pertumbuhan fisik dan perkembangan
+        organ-organ tubuh balita, tetapi juga menggantikan jaringan yang aus atau rusak.
+    </string>
+    <string name="zat_pengatur">
+        Zat pengatur berfungsi agar organ-organ dan jaringan tubuh termasuk
+        otak dapat berjalan seperti yang diharapkan. Berikut ini zat yang
+        berperan sebagai zat pengatur. \n
+        a.\t Vitamin, baik yang larut air (vitamin B kompleks dan vitamin C)
+        maupun yang larut dalam lemak (vitamin A, D, E, dan K).\n
+        b.\t Berbagai mineral, seperti kalsium, zat besi, iodium, dan flour.\n
+        c.\t Air
+    </string>
+    <string name="periode_emas">Ketika bayi (usia 0-11 bulan) merupakan masa pertumbuhan dan perkembangan yang pesat yang mencapai puncaknya pada usia 24 bulan.\n
+        Apabila pada masa periode emas bayi memperoleh asupan gizi yang sesuai maka tumbuh kembang akan optimal. Sebaliknya apabila bayi pada masa ini tidak memperoleh makanan sesuai
+        kebutuhan gizinya, maka periode emas akan berubah menjadi periode kritis yang akan mengganggu tumbuh kembang bayi
+        dan anak, baik pada saat ini maupun masa selanjutnya
+    </string>
+    <string name="cara">WHO/UNICEF merekomendasikan empat hal penting yang harus dilakukan yaitu:\n
+        1.\t Memberikan air susu ibu kepada bayi segera dalam waktu 30 menit setelah bayi lahir.\n
+        2.\t Memberikan hanya air susu ibu (ASI) saja atau pemberian ASI secara eksklusif sejak lahir sampai bayi berusia 6 bulan,.\n
+        3.\t Memberikan makanan pendamping air susu ibu (MP-ASI) sejak bayi berusia 6 bulan sampai 24 bulan, dan keempat meneruskan pemberian ASI sampai anak berusia 24 bulan atau lebih.
+    </string>
+    <string name="syarat">Menurut Molika (2014) makanan pendamping ASI yang memenuhi syarat adalah:\n
+        1.\t Kaya energi, protein dan mikronutrien (terutama zat besi,zink, kalsium,vitamin A, vitamin C dan folat).\n
+        2.\t Bersih dan aman, yaitu tidak ada pathogen (tidak ada bakteri penyebab penyakit atau organisme yang berbahaya lainnya), tidak ada bahan kimia yang berbahaya atau toksin, tidak ada potongan tulang atau bagian yang keras atau yang membuat anak tersedak.\n
+        3.\t Tidak terlalu panas.\n
+        4.\t Tidak terlalu pedas atau asin.\n
+        5.\t Mudah dimakan oleh anak.\n
+        6.\t Disukai anak.\n
+        7.\t Mudah disiapkan
+    </string>
+    <string name="pemberian">Makanan sumber zat tenaga : 3-4 piring (1 gelas nasi/penggantinya) misalnya roti,bihun.\n
+        Makanan sumber zat pembangun : 4-5 porsi lauk@ 50 gr misalnya telur, daging, tempe, tahu. Dianjurkan 2 porsi berasal dari protein hewani.\n
+        Makanan sumber zat pengatur :2-3 porsi sayuran, buah-buahan berwarna. Satu porsi sayuran sama dengan satu mangkok sayuran , satu porsi kurang lebih 100 gram.
+    </string>
+    <string-array name="gender">
+        <item>--Jenis Kelamin--</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="kategori">
+        <item>--Kategori--</item>
+        <item>0-5 Tahun</item>
+        <item>6-12 Tahun</item>
+        <item>>13 Tahun</item>
+    </string-array>
+
+</resources>

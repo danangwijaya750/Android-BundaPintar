@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ui.splash.SplashScreenActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/bunda_pintar"
+        android:id="@+id/iv_bunda_pintar"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_bunda_pintar"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_gizi_app"
+        android:id="@+id/iv_logo"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/bintik_bintik"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

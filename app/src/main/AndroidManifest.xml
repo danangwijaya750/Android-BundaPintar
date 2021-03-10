@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dngwjy.bundapintar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BundaPintar">
+        <activity android:name=".ui.status_gizi.CalculatorActivity"></activity>
+        <activity android:name=".ui.menu_gizi_seimbang.DetailMenuActivity" />
+        <activity android:name=".ui.status_gizi.CekStatusGiziActivity" />
+        <activity android:name=".ui.menu_gizi_seimbang.MenuGiziSeimbangActivity" />
+        <activity android:name=".ui.bunda_harus_tahu.BundaHarusTahuActivity" />
+        <activity android:name=".ui.fungsi_makanan.FungsiMakananActivity" />
+        <activity android:name=".ui.kebutuhan_gizi.DetailKebutuhanGiziActivity" />
+        <activity android:name=".ui.kebutuhan_gizi.KebutuhanGiziBalita" />
+        <activity android:name=".ui.edukasi.EdukasiGiziSeimbangActivity" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.splash.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

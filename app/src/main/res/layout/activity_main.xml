@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/tv_header"
+            android:textStyle="bold"
+            android:text="MENU"
+            android:textColor="@color/primary"
+            android:textSize="42sp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn"
+            android:id="@+id/bt1"
+            android:layout_width="150dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:text="Edukasi Gizi Seimbang"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/bt3"
+            app:layout_constraintEnd_toStartOf="@id/bt2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"
+            android:padding="5dp"
+            android:id="@+id/bt2"
+            android:layout_width="150dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:text="Kebutuhan Gizi Balita"
+            app:layout_constraintBottom_toTopOf="@id/bt4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt1"
+            app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/bt3"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Fungsi Makanan"
+            app:layout_constraintBottom_toTopOf="@id/bt5"
+            app:layout_constraintEnd_toStartOf="@id/bt4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/bt4"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:text="Bunda Harus Tahu"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/bt6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt3"
+            app:layout_constraintTop_toBottomOf="@id/bt2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/bt5"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Menu Gizi Seimbang Balita"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/bt6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/bt6"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:text="Cek Status Gizi Balita"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt5"
+            app:layout_constraintTop_toBottomOf="@id/bt4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

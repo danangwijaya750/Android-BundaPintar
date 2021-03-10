@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.edukasi.EdukasiGiziSeimbangActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="15dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="KEBUTUHAN GIZI BALITA"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt1"
+            android:layout_width="150dp"
+            android:textStyle="bold"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:text="ENERGI"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/bt3"
+            app:layout_constraintEnd_toStartOf="@id/bt2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:text="protein"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/bt4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt1"
+            app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt3"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="KH"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/bt5"
+            app:layout_constraintEnd_toStartOf="@id/bt4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt4"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="LEMAK"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/bt6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt3"
+            app:layout_constraintTop_toBottomOf="@id/bt2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt5"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="VITAMIN &amp; MINERAL"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/bt6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/bg_btn_sub"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt6"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="CAIRAN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt5"
+            app:layout_constraintTop_toBottomOf="@id/bt4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
