@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="FUNGSI MAKANAN"
+                android:text="PEMBERIAN MAKANAN BAYI &amp; ANAK"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -51,7 +51,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/btn_tenaga"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
@@ -59,7 +59,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/bg_btn_sub"
                 android:gravity="center_vertical"
-                android:text="ZAT TENAGA"
+                android:text="STRATEGI PMBA"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="26sp"
@@ -92,7 +92,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/btn_pembangun"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
@@ -100,7 +100,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/bg_btn_sub"
                 android:gravity="center_vertical"
-                android:text="ZAT PEMBANGUN"
+                android:text="PEDOMAN PEMBERIAN MAKANAN YANG SEHAT"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="26sp"
@@ -123,6 +123,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/ll_pengatur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

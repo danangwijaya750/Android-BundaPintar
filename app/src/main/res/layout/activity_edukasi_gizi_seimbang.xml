@@ -101,7 +101,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/bg_btn_sub"
                 android:gravity="center_vertical"
-                android:text="PENYEBAB KURANG GIZI"
+                android:text="KEKURANGAN ENERGI PROTEIN (KEP)"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
@@ -124,6 +124,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/ll_tanda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -169,6 +170,7 @@
             android:id="@+id/ll_akibat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

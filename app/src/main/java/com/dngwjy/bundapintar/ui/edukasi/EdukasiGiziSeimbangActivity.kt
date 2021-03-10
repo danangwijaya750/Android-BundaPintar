@@ -29,12 +29,15 @@ class EdukasiGiziSeimbangActivity : BaseActivity() {
             startActivity(intent)
         }
         btn_penyebab.setOnClickListener {
-            if(!isBt2Expand){
-                tv_penyebab.visibility= View.VISIBLE
-            }else{
-                tv_penyebab.visibility= View.GONE
-            }
-            isBt2Expand=!isBt2Expand
+//            if(!isBt2Expand){
+//                tv_penyebab.visibility= View.VISIBLE
+//            }else{
+//                tv_penyebab.visibility= View.GONE
+//            }
+//            isBt2Expand=!isBt2Expand
+            val intent= Intent(this,DetailMenuActivity::class.java)
+            intent.putExtra("test2","test2")
+            startActivity(intent)
         }
         btn_tanda.setOnClickListener {
             if(!isBt3Expand){

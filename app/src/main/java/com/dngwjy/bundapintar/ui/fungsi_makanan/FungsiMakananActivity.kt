@@ -1,9 +1,11 @@
 package com.dngwjy.bundapintar.ui.fungsi_makanan
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.dngwjy.bundapintar.R
 import com.dngwjy.bundapintar.base.BaseActivity
+import com.dngwjy.bundapintar.ui.menu_gizi_seimbang.DetailMenuActivity
 import kotlinx.android.synthetic.main.activity_fungsi_makanan.*
 import kotlinx.android.synthetic.main.activity_fungsi_makanan.iv_back
 
@@ -15,20 +17,14 @@ class FungsiMakananActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fungsi_makanan)
         btn_pembangun.setOnClickListener {
-            if(!isExpanded1){
-                tv_zat_pembangun.visibility= View.VISIBLE
-            }else{
-                tv_zat_pembangun.visibility= View.GONE
-            }
-            isExpanded1=!isExpanded1
+            val intent= Intent(this, DetailMenuActivity::class.java)
+            intent.putExtra("strategi","strategi")
+            startActivity(intent)
         }
         btn_pengatur.setOnClickListener {
-            if(!isExpanded2){
-                tv_zat_pengatur.visibility= View.VISIBLE
-            }else{
-                tv_zat_pengatur.visibility= View.GONE
-            }
-            isExpanded2=!isExpanded2
+            val intent=Intent(this,DetailMenuActivity::class.java)
+            intent.putExtra("pedoman","pedoman")
+            startActivity(intent)
         }
         btn_tenaga.setOnClickListener {
             if(!isExpanded3){

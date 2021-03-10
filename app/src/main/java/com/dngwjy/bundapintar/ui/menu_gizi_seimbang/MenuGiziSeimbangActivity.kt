@@ -15,13 +15,19 @@ class MenuGiziSeimbangActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_gizi_seimbang)
         btn_pemberian.setOnClickListener {
-            val intent=Intent(this, DetailKebutuhanGiziActivity::class.java)
-            intent.putExtra("title","PEMBERIAN MAKAN SEHARI PADA BALITA")
-            intent.putExtra("doc",R.drawable.makan_balita)
+            val intent=Intent(this,DetailMenuActivity::class.java)
+            intent.putExtra("lumat","lumat")
             startActivity(intent)
         }
         btn_contoh.setOnClickListener {
-           startActivity(Intent(this, DetailMenuActivity::class.java))
+            val intent=Intent(this,DetailMenuActivity::class.java)
+            intent.putExtra("lembik","lembik")
+            startActivity(intent)
+        }
+        btn_contoh2.setOnClickListener {
+            val intent=Intent(this,DetailMenuActivity::class.java)
+            intent.putExtra("keluarga","keluarga")
+            startActivity(intent)
         }
         iv_back.setOnClickListener {
             onBackPressed()
