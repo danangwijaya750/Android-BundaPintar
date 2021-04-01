@@ -4,16 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
+    android:background="#fff3de"
     tools:context=".ui.splash.SplashScreenActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/bg_up"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/bunda_pintar"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/name_product"
         android:id="@+id/iv_bunda_pintar"
         />
     <androidx.appcompat.widget.AppCompatImageView
@@ -30,10 +43,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/bintik_bintik"
+
+        android:src="@drawable/bg_bot"
         android:layout_width="match_parent"
         android:scaleType="centerCrop"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         />
 
 

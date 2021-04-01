@@ -81,7 +81,7 @@ class CalculatorActivity : BaseActivity() {
                                         processData(data1, data2, data3)
                                     } else {
                                         val data1 = JsonReader.readBulan(this, R.raw.tb_u_lk)
-                                        val data2 = JsonReader.readBulan(this, R.raw.tb_u_lk)
+                                        val data2 = JsonReader.readBulan(this, R.raw.bb_u_lk)
                                         val data3 = JsonReader.readTb(this, R.raw.tb_bb_lk)
                                         processData(data1, data2, data3)
                                     }
@@ -94,7 +94,7 @@ class CalculatorActivity : BaseActivity() {
                                         processData(data1, data2, data3)
                                     } else {
                                         val data1 = JsonReader.readBulan(this, R.raw.tb_u_pr)
-                                        val data2 = JsonReader.readBulan(this, R.raw.tb_u_pr)
+                                        val data2 = JsonReader.readBulan(this, R.raw.bb_u_pr)
                                         val data3 = JsonReader.readTb(this, R.raw.tb_bb_pr)
                                         processData(data1, data2, data3)
                                     }
@@ -109,14 +109,14 @@ class CalculatorActivity : BaseActivity() {
                                 }
                                 1 -> {
                                     val data1 = JsonReader.readBulan(this, R.raw.tb_u_lk)
-                                    val data2 = JsonReader.readBulan(this, R.raw.tb_u_lk)
+                                    val data2 = JsonReader.readBulan(this, R.raw.bb_u_lk)
                                     val data3 = JsonReader.readTb(this, R.raw.tb_bb_lk)
                                     processData(data1, data2, data3)
 
                                 }
                                 2 -> {
                                     val data1 = JsonReader.readBulan(this, R.raw.tb_u_pr)
-                                    val data2 = JsonReader.readBulan(this, R.raw.tb_u_pr)
+                                    val data2 = JsonReader.readBulan(this, R.raw.bb_u_pr)
                                     val data3 = JsonReader.readTb(this, R.raw.tb_bb_pr)
                                     processData(data1, data2, data3)
                                 }
@@ -131,14 +131,14 @@ class CalculatorActivity : BaseActivity() {
                                 1 -> {
 
                                     val data1 = JsonReader.readBulan(this, R.raw.tb_u_lk)
-                                    val data2 = JsonReader.readBulan(this, R.raw.tb_u_lk)
+                                    val data2 = JsonReader.readBulan(this, R.raw.bb_u_lk)
                                     val data3 = JsonReader.readTb(this, R.raw.tb_bb_lk)
                                     processData(data1, data2, data3)
 
                                 }
                                 2 -> {
                                     val data1 = JsonReader.readBulan(this, R.raw.tb_u_pr)
-                                    val data2 = JsonReader.readBulan(this, R.raw.tb_u_pr)
+                                    val data2 = JsonReader.readBulan(this, R.raw.bb_u_pr)
                                     val data3 = JsonReader.readTb(this, R.raw.tb_bb_pr)
                                     processData(data1, data2, data3)
 
@@ -162,13 +162,13 @@ class CalculatorActivity : BaseActivity() {
         val zScoreBB = diff / simpangan
         val statusGizi =
             if (zScoreBB < -3.0) {
-                "Gizi Buruk"
+                "Berat Badan Sangat Kurang"
             } else if (zScoreBB < -2.0 && zScoreBB >= -3.0) {
-                "Gizi Kurang"
-            } else if (zScoreBB <= 2.0 && zScoreBB >= -2.0) {
-                "Gizi Baik"
+                "Berat Badan Kurang"
+            } else if (zScoreBB <= 1.0 && zScoreBB >= -2.0) {
+                "Berat Badan Normal"
             } else {
-                "Gizi Lebih"
+                "Resiko Berat Badan Lebih"
             }
         val filteredData1=data1.data.filter { it.bulan==bulan }
         val medianData1=filteredData1[0].median
@@ -184,7 +184,7 @@ class CalculatorActivity : BaseActivity() {
                 "Sangat Pendek"
             } else if (zScoreTB < -2.0 && zScoreTB >= -3.0) {
                 "Pendek"
-            } else if (zScoreTB <= 2.0 && zScoreTB >= -2.0) {
+            } else if (zScoreTB <= 3.0 && zScoreTB >= -2.0) {
                 "Normal"
             } else {
                 "Tinggi"
@@ -194,7 +194,7 @@ class CalculatorActivity : BaseActivity() {
         val filteredData3=data3.data.filter { it.tb == tb }
         val medianData3=filteredData3[0].median
         val diffData3=et_tb.text.toString().toDouble() - medianData3
-        var simpanganData3=if(diffData3>=0){
+        val simpanganData3=if(diffData3>=0){
             filteredData3[0].plus1-medianData3
         }else{
             medianData3 - filteredData3[0].min1
@@ -202,13 +202,17 @@ class CalculatorActivity : BaseActivity() {
         val zScoreBBTB = diffData3/simpanganData3
         val statusBBTB =
             if (zScoreBBTB < -3.0) {
-                "Sangat Kurus"
+                "Gizi Buruk"
             } else if (zScoreBBTB < -2.0 && zScoreBBTB >= -3.0) {
-                "Kurus"
-            } else if (zScoreBBTB <= 2.0 && zScoreBBTB >= -2.0) {
-                "Normal"
+                "Gizi Kurang"
+            } else if (zScoreBBTB <= 1.0 && zScoreBBTB >= -2.0) {
+                "Gizi Normal"
+            } else if (zScoreBBTB <= 2.0 && zScoreBBTB > 1.0) {
+                "Beresiko Gizi Lebih"
+            }  else if (zScoreBBTB <= 3.0 && zScoreBBTB > 2.0) {
+                "Gizi Lebih"
             } else {
-                "Gemuk"
+                "Obesitas"
             }
         showDialog(statusGizi,statusTB,statusBBTB)
     }

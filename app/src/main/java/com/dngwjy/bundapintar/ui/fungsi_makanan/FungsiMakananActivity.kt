@@ -17,22 +17,23 @@ class FungsiMakananActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fungsi_makanan)
         btn_pembangun.setOnClickListener {
-            val intent= Intent(this, DetailMenuActivity::class.java)
-            intent.putExtra("strategi","strategi")
-            startActivity(intent)
-        }
-        btn_pengatur.setOnClickListener {
             val intent=Intent(this,DetailMenuActivity::class.java)
             intent.putExtra("pedoman","pedoman")
             startActivity(intent)
         }
+        btn_pengatur.setOnClickListener {
+
+        }
         btn_tenaga.setOnClickListener {
-            if(!isExpanded3){
-                tv_zat_tenaga.visibility= View.VISIBLE
-            }else{
-                tv_zat_tenaga.visibility= View.GONE
-            }
-            isExpanded3=!isExpanded3
+//            if(!isExpanded3){
+//                tv_zat_tenaga.visibility= View.VISIBLE
+//            }else{
+//                tv_zat_tenaga.visibility= View.GONE
+//            }
+//            isExpanded3=!isExpanded3
+            val intent= Intent(this, DetailMenuActivity::class.java)
+            intent.putExtra("strategi","strategi")
+            startActivity(intent)
         }
 
         iv_back.setOnClickListener {

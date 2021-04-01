@@ -2,6 +2,8 @@ package com.dngwjy.bundapintar.ui.menu_gizi_seimbang
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import com.bumptech.glide.Glide
 import com.dngwjy.bundapintar.R
 import com.dngwjy.bundapintar.base.BaseActivity
 import com.github.barteksc.pdfviewer.util.FitPolicy
@@ -47,6 +49,9 @@ class DetailMenuActivity : BaseActivity() {
             }
             intent.hasExtra("kebutuhan") -> {
                 tv_header.text="KEBUTUHAN GIZI BALITA"
+                iv_detail.visibility= View.VISIBLE
+                Glide.with(this).load(resources.getDrawable(R.drawable.kebutuhan_gizi))
+                        .into(iv_detail)
 //                try {
 //                    pdfView.fromAsset("test.pdf").pages(9)
 //                            .spacing(0)
@@ -59,6 +64,9 @@ class DetailMenuActivity : BaseActivity() {
             }
             intent.hasExtra("fungsi") -> {
                 tv_header.text="FUNGSI MAKANAN"
+                iv_detail.visibility= View.VISIBLE
+                Glide.with(this).load(resources.getDrawable(R.drawable.fungsi_makanan))
+                        .into(iv_detail)
 //                try {
 //                    pdfView.fromAsset("test.pdf").pages(9)
 //                        .spacing(0)
